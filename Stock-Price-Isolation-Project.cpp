@@ -32,7 +32,9 @@ int main()
 	const string output_path = "C:\\Ticker Output Files";
 	const string open_prices_path = output_path + "\\" + "Open Prices.csv";
 	const string close_prices_path = output_path + "\\" + "Close Prices.csv";
+	
 
+//+++++++++++++++++++++++++ STOCK DATA VECTOR ++++++++++++++++++++++++++++++++
 
 	vector<map<string, Data>> data;	// To store all the stocks data
 	vector<string> stock_dates; // To store the dates of each stock
@@ -90,6 +92,9 @@ int main()
 		input_file.close();
 	}
 
+//+++++++++++++++++++++ COMPUTE STOCK AVAILABILITY ++++++++++++++++++++++++++++++++
+
+	
 	const auto input_files_count = data.size();	// Number of input files
 
 	// Compute all the available tickers
@@ -118,6 +123,9 @@ int main()
 		if (tickers_not_everywhere.find(ticker) == end(tickers_not_everywhere))
 			tickers_everywhere.insert(ticker);
 	}
+	
+//+++++++++++++++++++++++++++ OUTPUT ++++++++++++++++++++++++++++++++
+
 
 	// Output results
 	
@@ -158,6 +166,9 @@ int main()
 	// Close files
 	open_prices_file.close();
 	close_prices_file.close();
+	
+//+++++++++++++++++++++++++++ TIME ++++++++++++++++++++++++++++++++
+
 
 	// Calculates End time and Elapsed time
 	const auto end_time = chrono::system_clock::now(); // End time of the program
