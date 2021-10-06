@@ -1,3 +1,4 @@
+
 <h1> Stock Price Isolation Project </h1>
 <br>
 <h2> Objective </h2>
@@ -15,3 +16,5 @@ every file of the input directory.
 
 <br>
 <br>
+
+<img width="793" alt="Screen Shot 2021-10-06 at 1 00 56 AM" src="https://user-images.githubusercontent.com/47196412/136149037-43d316f5-893e-4ce8-80a8-2a0823539fb6.png">
